@@ -1,0 +1,297 @@
+@font-face {
+  font-family: AbrilFatface;
+  src: url(AbrilFatface.ttf);
+}
+
+h1 { margin:25px;
+	text-align:left;}
+h2 {color:black; text-align:left; margin-left:35px;}
+h3 { color: goldenrod; margin: 15px;}
+h4 { color: goldenrod; margin-left: 50px;}
+label {color:goldenrod; margin: 15px;}
+
+a:link, a:visited { 
+  color:#a9a9a9;
+}
+
+.div-navbar {
+  background-color: yellow;
+}
+
+.user-info {
+  margin-top: 200px;
+  color: goldenrod;
+  background-color: #3b4148;
+}
+
+.button {
+  background-color: goldenrod;
+  border: none;
+  color: black;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 25px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.search input {
+    margin-left: 175px;
+    width: 77%;
+    background-color: #3b4148;
+}
+
+.login-button {
+    color:white;
+    border: 2px solid #4CAF50;
+}
+
+payment-button {
+    color:gold;
+    border: 2px solid goldenrod; 
+    margin-left:20px;
+    background-color: goldenrod; 
+}
+
+.card {
+    margin-top: 25px;
+    border-color:goldenrod;
+}
+
+.card-body { 
+  background-color: #3b4148; border-color:goldenrod; color: goldenrod;}
+
+.card-span {
+	color: goldenrod;
+}
+
+.card-footer { color:goldenrod;}
+
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+}
+
+.active-retired {
+    margin-top: 175px;
+    margin-left: 205px;
+    width: 100%;
+    color:goldenrod;
+}
+
+.user-accounts {
+    margin-left: 205px;
+    width: 100%
+ color:goldenrod;
+}
+
+.account-link {
+    margin-left: 205px;
+    width: 100%
+}
+
+.load-funds {
+ margin-top:400px;
+margin-left:50px;
+}
+    
+.active_retired a:link, .active_retired a:visited {
+    font-weight: bold;
+}
+
+.transaction-history {
+  margin-top:50px;
+	margin-left:50px;
+}
+
+.table {
+  margin-left:50px;
+  
+}
+
+.remember { margin-left:10px; }
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+after { clear: both; }
+
+.promo-banner {
+	margin-left:50px;
+}
+
+#login {
+  margin: 50px auto;
+  width: 320px;
+}
+
+#login form {
+  margin: auto;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  background: #282e33;
+  border-top: 3px solid #fecb2f;
+  border-bottom: 3px solid #fecb2f;
+}
+
+#login form span {
+  background-color: #363b41;
+  border-radius: 3px 0px 0px 3px;
+  border-right: 3px solid #434a52;
+  color: #606468;
+  display: block;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+#login form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
+}
+
+#login form input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
+}
+
+#login form input[type="submit"] {
+  background: #fecb2f;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-bottom:10px;
+}
+#login form input[type="submit"]:hover {
+  background: #16aa56;
+}
+
+#dash-div form {
+  margin-bottom:20px;
+  padding: 22px 22px 22px 22px;
+  width: 100%;
+  border-radius: 5px;
+  font-size:10px;
+  color:goldenrod;
+  background: #282e33;
+  border-top: 3px solid #fecb2f;
+  border-bottom: 3px solid #fecb2f;
+}
+
+#dash-div a { color:goldenrod; margin:10px; margin-left:50px; font-size:200%;}
+
+#payment input[type="number"] {
+padding: 0 16px;
+  border: 2px solid goldenrod;
+  transition: background 0.3s ease-in-out;
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  width: 100px;
+  height: 40px;
+}
+
+.currency-input {
+  color: goldenrod;
+  font-size:40px;
+  margin: 10px 0px 10 10px;
+}
+
+#payment input[type="submit"] {
+  background: #fecb2f;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-bottom:10px;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #3b4148; color:goldenrod;}
+
+#customers tr:nth-child(odd) {background-color: #3b4148; color:goldenrod;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: goldenrod;
+  color: black;
+}
+
+/*Dashboard Home Page*/
+
+.home {
+  background: #3b4148;
+  margin-left:250px;
+}
+
+#navigation {
+    background: #0e1a35;
+    color:goldenrod;
+}
+
+#navigation {
+    padding: 0;
+}
+
+.display-table {
+    display: table;
+    padding: 0;
+    height: 100%;
+    width: 75%;
+}
+
+.display-table-row {
+    display: table-row;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    float: none;
+    height: 100%;
+}
