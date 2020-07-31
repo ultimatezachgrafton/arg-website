@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+    body {
+        font-size: 20px;
+    }
+
+    #div-base-navbar {
+        display: flex;
+        align-items: center;
+        height:115px;
+        background-color: black;
+    }
+
+    #ul-nav {
+        list-style: none;
+    }
+
+    .nav-link {
+        margin:20px;
+        padding:20px;
+    }
+
+    .nav-link a {
+        color: white;
+        font-size:15px;
+    }
+
+    .nav-link a:hover {
+        color:gold;
+    }
+
+    #nav-link-cardholders  {
+        margin-top:20px;
+        padding:15px;
+        border: 5px solid gold;
+    }
+
+    .ul-footer-item {
+        float:left;
+    }
+
+    .ul-footer {
+        float:center;
+    }
+    
+</style>
+
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154134040-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-154134040-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American River Gold</title>
     <link rel="icon" type="image/png" sizes="473x473" href="/static/img/river.png">
-    <link href="/static/css/styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    {{ fontawesome_html() }}
 </head>
+
 <body>
-    <nav id="base-navbar">
+    <div id="div-base-navbar">
         <a class="class-nav-image" href="/">
-            <img id="nav-arg-logo" style="width:100px;" src="/static/img/arg_logo.svg">
+            <img id="nav-arg-logo" style="width:100px; margin:22px; margin-left:50px;" src="/static/img/arg_logo.svg">
         </a>
-    </nav>
-    <!-- END HEADER  -->
+        
+        <ul id="ul-nav">
+            <li class="nav-link"><a href="/#about-us">About Us</a></li>
+            <li class="nav-link"><a href="/channel_partner_accounts">Channel Partners</a></li>
+            <li class="nav-link"><a id="nav-link-cardholders" href="/check_balance.html"> Cardholders</a></li>
+        </ul>
+    </div>
+   <!-- END HEADER  -->
+
+        <div id="div-jumbotron" class="jumbotron" style="background-color:white">
+            {% block content %}{% endblock %}
+        </div>
+
+    <!-- FOOTER SECTION  -->
+    <div class="div-footer">
+        <p class="text-center" style="font-size:10px;">*Upon acceptance and use of the American River Gold Card, you are automatically
+                enrolled in our "American River Gold mystery shopper program". Which means you shall get paid for
+                writing reviews of local retailers. All "American River Gold mystery shoppers" are considered
+                Independent Contractors of American River Gold. As an American River Gold Independent Contractor you may
+                write online reviews for retailers you shop at for the benefit of your local community. You shall get
+                paid for each review at a rate of ranging from $0.01 to $0.99 per review dependant upon the quality of
+                each review. Review quality will be determined via the sole discretion of our chief content coordinator.
+                Reviews will be emailed to reviews (at) Americanrivergold.com and must be emailed no later than 8 years
+                (2922 days) after the original purchase so that the purchase is still fresh in the mind of the mystery
+                shopper. If you would like to submit a review after 8 years (2922 days) please email your request to
+                reviews (at) Americanrivergold.com with your review and a detailed explanation for it's tardy delivery.
+                Some reviews at certain retailers will require additional information; these reviewers will be sent the
+                "American River Gold mystery shopper satisfaction survey form". Which retailers will require the survey
+                form in addition to the review is subject to change at any time. Limit of 200 reviews per year, unless
+                mystery shopper is given explicit permission to write a higher volume of reviews. Reviews will
+                immediately become the intellectual property of American River Gold and will be published on and/or sold
+                to the content platforms of American River Golds choosing and may be sold and shared with partner
+                retailers in addition to potential future partner retailers. Payment for reviews WILL NOT be paid via
+                the Independent Contractors American River Gold Card; it will be paid via check or cash with exact
+                instructions for receiving payment given after review(s) have been submitted. American River Gold
+                Independent Contractors and employees are only allowed to use their American River Gold card for
+                commercial purposes. Non-commercial use is strictly prohibited. Using the American River Gold card for
+                personal, family, or household purposes is strictly prohibited. Also please don't use the card to gamble
+                or fund terrorist activities. <br></p>
+
+            <ul class="ul-footer" style="margin-top:20px;">
+                <li class="ul-footer-item"  id="login" ><a href="/login">Channel Partner Login</a></li>
+                <li class="ul-footer-item"  id="API" ><a href="/jumbotronpage.html">API</a></li>
+                <li class="ul-footer-item"  id="privacy_footer" ><a href="/privacy_policy.html">Privacy Policy</a></li>
+                <li class="ul-footer-item" id="tandc_footer" ><a href="/terms_and_conditions.html">Terms</a></li>
+                <li class="ul-footer-item" id="foot_home_link" style="color:black"><a href="/">Home</a></li>
+            </ul>
+
+            <div class="div-footer-copyright" style="margin: auto; margin-top: 200px;width: 50%; padding: 10px;">
+                <img style="width: 20px;" src="/static/img/river.svg">
+                <p class="p-copyright">American River Gold © 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/smart-forms.min.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script src="https://js.braintreegateway.com/web/3.55.0/js/client.min.js"></script>
+    <script src="https://js.braintreegateway.com/web/dropin/1.20.4/js/dropin.min.js"></script>
+    <script src="https://js.braintreegateway.com/web/3.55.0/js/data-collector.min.js"></script>
+    <script src="/static/js/script.min.js"></script>
+</body>
+
+</html>
