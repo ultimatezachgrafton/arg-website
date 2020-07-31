@@ -15,10 +15,12 @@
 
     #ul-nav {
         list-style: none;
+        display:flex;
+        flex:1;
     }
 
     .nav-link {
-        margin:20px;
+        margin-left:30px;
         padding:20px;
     }
 
@@ -37,12 +39,30 @@
         border: 5px solid gold;
     }
 
-    .ul-footer-item {
-        float:left;
+    .ul-footer {
+        list-style: none;
+        display:flex;
+        margin-top:20px;
+        justify-content: center;
     }
 
-    .ul-footer {
-        float:center;
+    .ul-footer-item a {
+        margin:30px;
+        color:black;
+    }
+
+    .div-footer-img {
+        display:flex;
+        justify-content: center;
+    }
+
+    .div-footer-copyright {
+        display:flex;
+        justify-content: center;
+    }
+
+    #arg-logo-small {
+        width:25px;
     }
     
 </style>
@@ -109,16 +129,18 @@
                 personal, family, or household purposes is strictly prohibited. Also please don't use the card to gamble
                 or fund terrorist activities. <br></p>
 
-            <ul class="ul-footer" style="margin-top:20px;">
-                <li class="ul-footer-item"  id="login" ><a href="/login">Channel Partner Login</a></li>
-                <li class="ul-footer-item"  id="API" ><a href="/jumbotronpage.html">API</a></li>
-                <li class="ul-footer-item"  id="privacy_footer" ><a href="/privacy_policy.html">Privacy Policy</a></li>
-                <li class="ul-footer-item" id="tandc_footer" ><a href="/terms_and_conditions.html">Terms</a></li>
+            <ul class="ul-footer">
                 <li class="ul-footer-item" id="foot_home_link" style="color:black"><a href="/">Home</a></li>
+                <li class="ul-footer-item" id="tandc_footer" ><a href="/terms_and_conditions.html">Terms</a></li>
+                <li class="ul-footer-item"  id="privacy_footer" ><a href="/privacy_policy.html">Privacy Policy</a></li>
+                <li class="ul-footer-item"  id="API" ><a href="/jumbotronpage.html">API</a></li>
+                <li class="ul-footer-item"  id="login" ><a href="/login">Channel Partner Login</a></li>
             </ul>
 
-            <div class="div-footer-copyright" style="margin: auto; margin-top: 200px;width: 50%; padding: 10px;">
-                <img style="width: 20px;" src="/static/img/river.svg">
+            <div class="div-footer-img">
+                <img id="arg-logo-small" src="/static/img/river.svg">
+            </div>
+            <div class="div-footer-copyright">
                 <p class="p-copyright">American River Gold © 2020</p>
             </div>
         </footer>
