@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card-options-container" style="display:flex; margin-left:350px;">
+	<div class="div-card-options" style="display:flex; flex-direction:column; width:300px; height:100%; 
+		border-right: 2px solid goldenrod; margin-left:35px;">
+		<h2 style="border-bottom: 3px solid goldenrod; margin-bottom:0px; padding-bottom:10px;">What would you like to do?</h2>
+		<ul style="list-style:none; margin-top:0px;">
+			<li class="li-buy-card" style="border-bottom: 2px solid goldenrod; padding:15px;">
+				<a href="/" id="link-buy-card" style="color:black; text-decoration: none;">
+					<b>BUY A CARD</b>
+				</a>
+			</li>
+			<li class="li-check-balance" style="border-bottom: 2px solid goldenrod; padding:15px;">
+				<a href="/" id="link-check-balance" style="color:black; text-decoration: none;">
+					<b>CHECK BALANCE</b>
+				</a>
+			</li>
+			<li class="li-reload-card" style="border-bottom: 2px solid goldenrod; padding:15px;">
+				<a href="/" id="link-reload-card" style="color:black; text-decoration: none;">
+					<b>RELOAD CARD</b>
+				</a>
+			</li>
+			<li class="li-terms" style="border-bottom: 2px solid goldenrod; padding:15px;">
+				<a href="/" id="link-terms" style="color:black; text-decoration: none;">
+					<b>TERMS & CONDITIONS</b>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="div-form" style="display:flex; flex:1; align-items:right;">
+		<form action="/" method="post">
+		<div class="div-check-balance" style="display:flex; align-items:left;">
+			<h2 style="border-bottom: 3px solid goldenrod; margin-bottom:0px; padding-bottom:10px; padding-left:10px; width:400px;">
+				Check Balance
+			</h1>
+		</div>
+	
+		<section class="form" style="padding:20px;">
+			<label for="GiftCardInfo_CardNumber">
+				Card Number
+			</label>
+			<div class="input-card-number">
+				<input class="cardNumber" data-val="true" data-val-regex="&lt;i class=&quot;iconJJCommons errorIcon&quot;>!&lt;/i> Gift Card Numbers consist of 5 to 24 digits." data-val-regex-pattern="^\d{5,24}$" data-val-required="&lt;i class=&quot;iconJJCommons errorIcon&quot;>!&lt;/i> Please enter the Gift Card Number." id="GiftCardInfo_CardNumber" maxlength="19" name="GiftCardInfo.CardNumber" title="Card Number" type="tel" value="" />		
+				<input type="submit" value="Check Balance" id="btnCheckBalanceCheckBalance" />
+			</div>
+			</section>
+		</form>
+	</div>
+</div>
+
+
+{% endblock  %}
